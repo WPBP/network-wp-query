@@ -13,7 +13,7 @@ Network: true
 */
 
 if (!defined('ABSPATH')) {
-    exit;
+    return;
 }
 
 use Devaloka\Plugin\NetworkWpQuery\Plugin;
