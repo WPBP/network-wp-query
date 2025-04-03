@@ -14,8 +14,6 @@
         "GPL-2.0",
         "GPL-3.0"
     ],
-    "minimum-stability": "dev",
-    "prefer-stable"    : true,
     "authors"          : [
         {
             "name"    : "Eric Lewis",
@@ -41,40 +39,12 @@
         "source": "https://github.com/devaloka/network-wp-query"
     },
     "require"          : {
-        "php"                      : ">=5.5.9",
-        "composer/installers"      : "~1.2",
-        "roave/security-advisories": "dev-master"
-    },
-    "require-dev"      : {
-        "squizlabs/php_codesniffer": "^2.9.1"
-    },
-    "scripts"          : {
-        "test"       : [
-            "vendor/bin/phpcs --colors"
-        ],
-        "test-travis": [
-            "vendor/bin/phpcs --colors"
-        ]
-    },
-    "archive"          : {
-        "exclude": [
-            ".gitignore",
-            ".gitattributes",
-            ".mailmap",
-            ".editorconfig",
-            ".conventional-changelog-lintrc",
-            ".cz-config.json",
-            "package.json",
-            "npm-shrinkwrap.json",
-            ".remarkignore",
-            ".remarkrc",
-            "gulpfile.js",
-            "composer.json",
-            "phpcs.xml.dist",
-            ".travis.yml"
-        ]
-    },
-    "extra"            : {
-        "installer-loader": "loader/50-network-wp-query-loader.php"
-    }
+        "php"                      : ">=8.0",
+        "composer/installers"      : "~2.0"
+    },   
+                "autoload": {
+                    "files": [
+                        "network-wp-query.php"
+                    ]
+                }
 }
